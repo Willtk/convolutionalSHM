@@ -1,0 +1,66 @@
+Entrar no Ambiente : source activate python2
+Sair do Ambiente : source deactivate
+
+
+
+sudo apt-get update 
+sudo apt-get upgrade
+
+-----------------
+
+sudo apt-get update 
+sudo apt-get install realvnc-vnc-server realvnc-vnc-viewer 
+
+sudo rasp-config
+
+user = "pi"   password = "raspberry"
+
+-----------------
+
+python --version
+uname -m
+
+wget http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-armv7l.sh
+bash Miniconda3-latest-Linux-armv7l.sh
+source ~/.bashrc
+
+python --version
+
+-----------------
+
+conda create --name python3 python=3
+source activate python3
+python --version
+
+-----------------
+
+conda install numpy
+conda install scipy
+conda install matplotlib
+conda install --channel https://conda.anaconda.org/ziddey matplotlib
+conda install scikit-learn
+
+-----------------
+
+conda create --name python2 python=2
+source activate python2
+python --version
+
+-----------------
+
+conda install numpy
+conda install scipy
+conda install matplotlib
+conda install --channel https://conda.anaconda.org/poppy-project matplotlib
+conda install scikit-learn
+wget https://github.com/samjabrahams/tensorflow-on-raspberry-pi/releases/download/v1.1.0/tensorflow-1.1.0-cp27-none-linux_armv7l.whl
+pip install tensorflow-1.1.0-cp27-none-linux_armv7l.whl
+sudo apt-get install libhdf5-serial-dev
+pip install h5py
+pip install pillow imutils
+pip install keras==2.1.5
+
+conda install --channel https://conda.anaconda.org/poppy-project opencv3
+-----------------
+
+
